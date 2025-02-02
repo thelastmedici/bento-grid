@@ -1,58 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Bento grid</title>
-
-</head>
-<body>
-
-  <div class="container">
-    <div class="header-title">
-      <h1 class="heading">Social Media <span class="yellow-text">10x</span> Faster with AI</h1>
-      <img src="./assets/images/illustration-five-stars.webp" alt="5-star-image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon & Fonts -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Bento grid</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header-title">
+      <h1 class="heading">
+        Social Media <span class="yellow-text">10x</span> Faster with AI
+      </h1>
+      <img src="./assets/images/illustration-five-stars.webp" alt="Five stars illustration" />
       <p>Over 4,000 5-star reviews</p>
-    </div>
-    <div class="multiple-account">
-      <img src="./assets/images/illustration-multiple-platforms.webp" alt="multiple-account">
-      <h2>Manage multiple accounts and platforms.</h2>
-    </div>
-    <div class="posting-schedule">
-      <h2>Maintain a consistent posting schedule.</h2>
-      <img src="./assets/images/illustration-consistent-schedule.webp" alt="illustration-consistent-schedule">
-    </div>
-    <div class="social-media-schedule">
-      <h2>Schedule to social media.</h2>
-      <img src="./assets/images/illustration-schedule-posts.webp" alt="illustration-social-media-schedule">
-      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
-    </div>
-    
-    <div class="grow-followers">
-      <img src="./assets/images/illustration-grow-followers.webp" alt="illustration-grow-followers">
-      <h2>Grow followers with non-stop content.</h2>
-    </div>
-    <div class="audience-growth"><span class="percentage-growth">>56%</span> <p>faster audience growth</p>
-      <img src="./assets/images/illustration-audience-growth.webp" alt="illustration-audience-growth">
-    </div>
-    
-    <div class="create-schedule"><h2>Create and schedule content <span class="purple-text">quicker.</span></h2>
-      <img src="./assets/images/illustration-create-post.webp" alt="illustration-create-schedule">
-    </div>
-    <div class="ai-post"><h2>Write your content using AI.</h2>
-      <img src="./assets/images/illustration-ai-content.webp" alt="illustration-ai-post">
-    </div>
-    
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    </header>
+
+    <!-- Main Grid Container -->
+    <main class="container">
+      <!-- Grid Item 1: Multiple Account -->
+      <section class="multiple-account grid-item">
+        <img src="./assets/images/illustration-multiple-platforms.webp" alt="Multiple accounts illustration" />
+        <h2>Manage multiple accounts and platforms.</h2>
+      </section>
+
+      <!-- Grid Item 2: Posting Schedule -->
+      <section class="posting-schedule grid-item">
+        <h2>Maintain a consistent posting schedule.</h2>
+        <img src="./assets/images/illustration-consistent-schedule.webp" alt="Consistent schedule illustration" />
+      </section>
+
+      <!-- Grid Item 3: Social Media Schedule -->
+      <section class="social-media-schedule grid-item">
+        <h2>Schedule to social media.</h2>
+        <img src="./assets/images/illustration-schedule-posts.webp" alt="Schedule posts illustration" />
+        <p>
+          Optimize post timings to publish content at the perfect time for your audience.
+        </p>
+      </section>
+
+      <!-- Grid Item 4: Grow Followers -->
+      <section class="grow-followers grid-item">
+        <img src="./assets/images/illustration-grow-followers.webp" alt="Grow followers illustration" />
+        <h2>Grow followers with non-stop content.</h2>
+      </section>
+
+      <!-- Grid Item 5: Audience Growth -->
+      <section class="audience-growth grid-item">
+        <span class="percentage-growth">&gt;56%</span>
+        <p>faster audience growth</p>
+        <img src="./assets/images/illustration-audience-growth.webp" alt="Audience growth illustration" />
+      </section>
+
+      <!-- Grid Item 6: Create Schedule -->
+      <section class="create-schedule grid-item">
+        <h2>
+          Create and schedule content <span class="purple-text">quicker.</span>
+        </h2>
+        <img src="./assets/images/illustration-create-post.webp" alt="Create schedule illustration" />
+      </section>
+
+      <!-- Grid Item 7: AI Post -->
+      <section class="ai-post grid-item">
+        <h2>Write your content using AI.</h2>
+        <img src="./assets/images/illustration-ai-content.webp" alt="AI content illustration" />
+      </section>
+    </main>
+
+    <!-- Footer / Attribution -->
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>

@@ -1,5 +1,11 @@
-body{
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: "DM Sans", serif;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 7%);
+    line-height: 1.6;
 }
