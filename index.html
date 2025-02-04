@@ -1,80 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon & Fonts -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Bento grid</title>
-  </head>
-  <body>
-  
-    <!-- Main Content -->
-      <main class="container">
-         <!-- Header Section -->
-        <header class="header-title grid-item">
-          <h1 class="heading">
-            Social Media <span class="yellow-text">10x</span> Faster with AI
-          </h1>
-          <img src="./assets/images/illustration-five-stars.webp" alt="Five stars illustration" />
-          <p>Over 4,000 5-star reviews</p>
-        </header>
-        <!-- Grid Item 1: Multiple Account -->
-        <section class="multiple-account grid-item">
-          <img src="./assets/images/illustration-multiple-platforms.webp" alt="Multiple accounts illustration" />
-          <h2>Manage multiple accounts and platforms.</h2>
-        </section>
-        <!-- Grid Item 2: Posting Schedule -->
-        <section class="posting-schedule grid-item">
-          <h2>Maintain a consistent posting schedule.</h2>
-          <img src="./assets/images/illustration-consistent-schedule.webp" alt="Consistent schedule illustration" />
-        </section>
-        <!-- Grid Item 3: Social Media Schedule -->
-        <section class="social-media-schedule grid-item">
-          <h2>Schedule to social media.</h2>
-          <img src="./assets/images/illustration-schedule-posts.webp" alt="Schedule posts illustration" />
-          <p>
-            Optimize post timings to publish content at the perfect time for your audience.
-          </p>
-        </section>
-        <!-- Grid Item 4: Grow Followers -->
-        <section class="grow-followers grid-item">
-          <img src="./assets/images/illustration-grow-followers.webp" alt="Grow followers illustration" />
-          <h2>Grow followers with non-stop content.</h2>
-        </section>
-        <!-- Grid Item 5: Audience Growth -->
-        <section class="audience-growth grid-item">
-          <span class="percentage-growth">&gt;56%</span>
-          <p>faster audience growth</p>
-          <img src="./assets/images/illustration-audience-growth.webp" alt="Audience growth illustration" />
-        </section>
-        <!-- Grid Item 6: Create Schedule -->
-        <section class="create-schedule grid-item">
-          <h2>
-            Create and schedule content <span class="purple-text">quicker.</span>
-          </h2>
-          <img src="./assets/images/illustration-create-post.webp" alt="Create schedule illustration" />
-        </section>
-        <!-- Grid Item 7: AI Post -->
-        <section class="ai-post grid-item">
-          <h2>Write your content using AI.</h2>
-          <img src="./assets/images/illustration-ai-content.webp" alt="AI content illustration" />
-        </section>
-      </main>
-    
 
-    <!-- Footer / Attribution -->
-    <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="9OQVhck4qd3nXu2yheAXjZWiuJH1c4er0bLx8ErttzE"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Bento grid</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body id="darkMode">
+  <button onclick="toggleThemes()" class="animation-0">Ligth/Dark</button>
+  <main>
+    <div class="container">
+
+      <section class="review-section animation-1">
+        <h1>Social Media <span>10x</span> <em>Faster</em> with AI</h1>
+        <img src="images/illustration-five-stars.webp" alt="Ratings">
+        <p>Over 4,000 5-star reviews</p>
+      </section>
+
+      <section class="multiple-platform-section animation-2">
+        <img src="images/illustration-multiple-platforms.webp" alt="Platforms">
+        <h2>Manage multiple accounts and platforms.</h2>
+      </section>
+
+      <section class="consistent-schedule-section animation-3">
+        <h3>Maintain a consistent posting schedule.</h3>
+        <img src="images/illustration-consistent-schedule.webp" alt="Calender">
+      </section>
+
+      <section class="schedule-posts-section animation-4">
+        <h4>Schedule to social media.</h4>
+        <img src="images/illustration-schedule-posts.webp" alt="Schedule Posts">
+        <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+      </section>
+
+      <section class="grow-followers-section animation-5">
+        <img src="images/illustration-grow-followers.webp" alt="Grow Followers">
+        <h5>Grow followers with non-stop content.</h5>
+      </section>
+
+      <section class="audience-growth-section animation-6">
+        <span>>56%</span>
+        <p>faster audience growth</p>
+        <img src="images/illustration-audience-growth.webp" alt="Audience">
+      </section>
+
+      <section class="create-post-section  animation-7">
+        <h6>Create and schedule content <em>quicker.</em></h6>
+        <img src="images/illustration-create-post.webp" alt="Creat Post">
+      </section>
+
+      <section class="ai-content-section animation-8">
+        <h6>Write your content using AI.</h6>
+        <img src="images/illustration-ai-content.webp" alt="">
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="animation-0">
+    <p>Coded by <a href="https://github.com/thelastmedici" target="_blank">thelastmedici</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
