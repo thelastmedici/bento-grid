@@ -1,4 +1,4 @@
 const theme = document.getElementById('darkMode')
-function toggleTheme() {
+function toggleThemes() {
     theme.classList.toggle('darkTheme')
 }
