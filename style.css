@@ -27,3 +27,264 @@
 
   --font-size: 1.125rem;
 }
+
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: 'DM Sans';
+  font-size: var(--font-size);
+  background-color: var(--White);
+  position: relative;
+}
+
+
+main{
+  display: grid;
+  grid-template-rows: 1fr, auto;
+  place-items: center;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 65rem;
+  width:100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, auto);
+  gap: 1.5rem;
+}
+
+.reviews-section{
+  grid-column: 2 / 4;
+  grid-row: 1 / 5;
+  background-color: var(--Purple-500);
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.5rem;
+  border-radius: 0.5rem;
+
+
+  & h1 {
+    color: var(--White);
+    font-weight: 500;
+    font-size: 3rem;
+    max-width: 12ch;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: -1px;
+
+    & span {
+      color: hsl(39, 100%, 71%);
+    }
+  }
+
+  & img {
+    width: 185px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  & p {
+    color: var(--White);
+    font-weight: 400;
+  }
+
+}
+
+.manage-platforms-section{
+  grid-column: 2 / 3;
+  grid-row: 5 / 8;
+  background-color: var(--white-bg);
+  padding: 1rem 0 1.5rem 1.5rem;
+  overflow: hidden;
+
+  /* &:hover {
+    box-shadow: 0 0 0 2px var(--purple-000);
+  } */
+
+  & img {
+    width: 295px;
+    filter: drop-shadow(0 10px 10px #0000001c);
+    margin-block: 0.7rem;
+  }
+
+  & h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 95%;
+    letter-spacing: -1px;
+    color: var(--font-color);
+  }
+}
+
+.consistent-posting-section{
+  grid-column: 3 / 4;
+  grid-row: 5 / 8;
+  background-color: var(--Yellow-500);
+  padding: 1.5rem;
+  overflow: hidden;
+  position: relative;
+
+  /* &:hover {
+    box-shadow: 0 0 0 2px var(--yellow-transparent);
+  } */
+
+  & h3 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 95%;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    color: var(--font-color);
+  }
+
+  & img {
+    width: 80%;
+    position: absolute;
+  }
+}
+
+.social-media-schedule-section{
+  grid-column: 4 / 5;
+  grid-row: 1 / 8;
+  background-color: var(--Purple-100);
+  padding: 2.4rem 0 3rem 2rem;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 0 0 2px var(--purple-000);
+  }
+
+  & h4 {
+    font-size: 1.8rem;
+    line-height: 100%;
+    font-weight: 500;
+    color: var(--font-color);
+  }
+
+  & img {
+    width: 330px;
+    margin-block: 1rem;
+  }
+
+  & p {
+    font-weight: 500;
+    max-width: 16ch;
+    font-size: 1rem;
+    line-height: 110%;
+    color: var(--font-color);
+  }
+}
+
+.grow-followers-section{
+  grid-column: 3 / 5;
+  grid-row: 8 / 11;
+  background-color: var(--Purple-500);
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0 0 0 2px var(--purple-transparent);
+  }
+
+  & img {
+    width: 220px;
+  }
+
+  & h5 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 100%;
+    color: var(--White);
+  }
+}
+
+.audience-growth-section{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  background-color: var(--white-bg);
+  padding: 1.5rem;
+
+  span{
+    font-weight: 500;
+    font-size: 3.1rem;
+    color: var(--Black);
+  }
+  & p{
+    margin-bottom: 1rem;
+    color: var(--Black);
+  }
+  & img{
+    width: 150px;
+  }
+}
+.create-content-section{
+   grid-column-start:1;
+   grid-column-end:2;
+   grid-row-start:1;
+   grid-row-end:6;
+   background-color: var(--Yellow-100);
+   padding: 1.5rem;
+   display:grid;
+   place-items:center;
+   gap: 1.5rem;
+
+
+   & h2 {
+    font-weight:500;
+    font-size: 2.2rem;
+    line-height: 90%;
+    align-self: flex-end;
+    color: var(--Black);
+
+    & em {
+      color: var(--Purple-500);
+     }
+   }
+
+   & img {
+    width: 100%;
+    align-self: flex-start;
+   }
+ 
+}
+
+.ai-writng-section{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:6;
+  grid-row-end:11;
+  background-color: var(--Yellow-500);
+  padding:1.5rem;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+
+  & h2 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 100%;
+    color: var(--White);
+    letter-spacing: -2px;
+  }
+  & img{
+    width: 100%;
+  }
+}
