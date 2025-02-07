@@ -76,7 +76,7 @@ main{
   place-items: center;
   padding: 3rem 1.5rem;
   border-radius: 0.5rem;
-
+    
 
   & h1 {
     color: var(--White);
@@ -113,9 +113,9 @@ main{
   overflow: hidden;
   border-radius: 0.5rem;
 
-  /* &:hover {
+  &:hover {
     box-shadow: 0 0 0 2px var(--purple-000);
-  } */
+  }
 
   & img {
     width: 295px;
@@ -140,9 +140,9 @@ main{
   overflow: hidden;
   position: relative;
   border-radius:0.5rem;
-  /* &:hover {
+  &:hover {
     box-shadow: 0 0 0 2px var(--yellow-transparent);
-  } */
+  }
 
   & h3 {
     font-size: 1.9rem;
@@ -225,7 +225,9 @@ main{
   background-color: var(--white-bg);
   padding: 1.5rem;
   border-radius: 0.5rem;
-
+   &:hover{
+    box-shadow: 0 0 0 2px var(--purple-000);
+   }
   span{
     font-weight: 500;
     font-size: 3.1rem;
@@ -250,8 +252,11 @@ main{
    place-items:center;
    gap: 1.5rem;
    border-radius: 0.5rem;
-
-
+   
+   &:hover{
+    box-shadow: 0 0 0 2px var(--yellow-transparent);
+   }
+   
    & h2 {
     font-weight:500;
     font-size: 2.2rem;
@@ -292,5 +297,27 @@ main{
   }
   & img{
     width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding-block-start: 2rem;
+
+  & p {
+    font-weight: 500;
+    color: hsl(256, 67%, 59%);
+
+    & a {
+      text-decoration: none;
+      background-color: hsl(256, 67%, 59%);
+      color: var(--White);
+      padding-inline: 0.4rem;
+      border-radius: 0.3rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
