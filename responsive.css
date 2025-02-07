@@ -19,5 +19,59 @@
     grid-column: auto;
     grid-row: auto;
     padding: 1rem;
+
+    & h3{
+      margin-block: 1.5rem;
+    }
   }
+  .consistent-posting-section{
+    overflow: hidden;
+    position:initial;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+    & img {
+      position: initial;
+      transform: translateY(30px);
+    }
+    & h3{
+      padding:0px 4px 0px 4px ;
+    }
+  }
+  .social-media-schedule-section{
+    grid-column: auto;
+    grid-row: auto;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    display: grid;
+    place-items: center;
+
+    & h3{
+      text-align: center;
+    }
+    & img{
+      width: 90%;
+    }
+    & p{
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+
+  .grow-followers-section{
+    grid-column: auto;
+    grid-row: auto;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+
+    & img{
+      width: 235px;
+    }
+  }
+  
+
 }
