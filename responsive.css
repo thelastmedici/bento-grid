@@ -1,119 +1,111 @@
-@media(max-width:1040px){
-  body{
-    padding-top: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 0rem;
-    padding-left: 0rem;
+@media (max-width: 1040px) {
+  body {
+    padding: 3rem 0;
   }
-  .container{
+  .container {
     max-width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-template-rows: auto;
-    
   }
-  .reviews-section{
+
+  .review-section,
+  .manage-platforms-section,
+  .consistent-posting-section,
+  .ssocial-media-schedule-section,
+  .grow-followers-section,
+  .audience-growth-section,
+  .create-content-section,
+  .ai-writing-section {
     grid-column: auto;
     grid-row: auto;
   }
+
   .manage-platforms-section{
-    grid-column: auto;
-    grid-row: auto;
     padding: 1rem;
 
-    & h3{
-      margin-block: 1.5rem;
+    & h3 {
+      margin-blocK: 1.5rem;
     }
   }
+
   .consistent-posting-section{
     overflow: hidden;
-    position:initial;
+    position: initial;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-around;
 
     & img {
       position: initial;
       transform: translateY(30px);
     }
-    & h3{
-      padding:0px 4px 0px 4px ;
-    }
   }
+
   .social-media-schedule-section{
-    grid-column: auto;
-    grid-row: auto;
-    padding-top: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     display: grid;
     place-items: center;
 
-    & h3{
+    & h3 {
       text-align: center;
     }
-    & img{
+
+    & img {
       width: 90%;
     }
-    & p{
+
+    & p {
       font-size: 1.3rem;
       text-align: center;
     }
   }
 
-  .grow-followers-section{
-    grid-column: auto;
-    grid-row: auto;
+  .grow-followers-section {
     display: grid;
     place-items: center;
     gap: 2rem;
 
-    & img{
+    & img {
       width: 80%;
     }
-    & h2{
+
+    & h2 {
       text-align: center;
     }
   }
 
-  .audience-growth-section{
-    grid-column: auto;
-    grid-row: auto;
-
-    & img{
+  .audience-growth-section {
+    & img {
       width: 80%;
       margin-top: 2rem;
     }
   }
 
   .create-content-section {
-    grid-column: auto;
-    grid-row: auto;
-
-      & img {
-        width: 60%;
-        text-align: left;
-        justify-self: flex-start;
-        margin-top: 2rem;
+    & img {
+      width: 60%;
+      text-align: left;
+      justify-self: flex-start;
+      margin-top: 2rem;
     }
   }
-  
-  .ai-writing-section{
-    gap: 2rem;
-  }
-  & img{
-    width: 80%;
-  }
 
+  .ai-writing-section {
+    gap: 2rem;
+
+    & img {
+      width: 80%;
+    }
+  }
 
   footer{
-    padding-block-end: 2rem;
-    }  
+  padding-block-end: 2rem;
+  }
 
 }
-@media (max-width:640px) {
-  body{
+
+@media (max-width: 640px) {
+  body {
     height: min-content;
   }
-  
 }
